@@ -1,0 +1,21 @@
+{
+    "name": "gilead-custom-html5-video",
+    "version": "1.0.0",
+    "description": "Gilead Custom HTML5 Video Player",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start --server --watch --files '*'",
+        "transpile-vidjs": "babel video-js-player/js/main.js --out-file video-js-player/js/videoJSPlayer.js",
+        "transpile-custom": "babel custom-video-player/js/main.js --out-file custom-video-player/js/customVideoPlayer.js"
+    },
+    "keywords": [
+        "javascript",
+        "html5"
+    ],
+    "author": "Gilead Tech",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-preset-env": "^1.7.0",
+        "browser-sync": "^2.26.7"
+    }
+}
